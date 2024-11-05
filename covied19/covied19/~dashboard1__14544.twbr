@@ -1,0 +1,2864 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <SpatialFileLayer />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='covid_19_india' inline='true' name='federated.181gqwt08czzz8168ky8r0b2f50b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='covid_19_india' name='textscan.1kvoaqu19qz89f1anpw5c0fswl5k'>
+            <connection class='textscan' directory='C:/Users/sunny sharma/Desktop/Covid-19/covied19' filename='covid_19_india.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1kvoaqu19qz89f1anpw5c0fswl5k' name='covid_19_india.csv' table='[covid_19_india#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Sno' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='string' name='Time' ordinal='2' />
+            <column datatype='string' name='State/UnionTerritory' ordinal='3' />
+            <column datatype='string' name='ConfirmedIndianNational' ordinal='4' />
+            <column datatype='string' name='ConfirmedForeignNational' ordinal='5' />
+            <column datatype='integer' name='Cured' ordinal='6' />
+            <column datatype='integer' name='Deaths' ordinal='7' />
+            <column datatype='integer' name='Confirmed' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[covid_19_india.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sno</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sno]</local-name>
+            <parent-name>[covid_19_india.csv]</parent-name>
+            <remote-alias>Sno</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_19_india.csv_AAC6241924DC4911BF46B4B75A781DA3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[covid_19_india.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_19_india.csv_AAC6241924DC4911BF46B4B75A781DA3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Time]</local-name>
+            <parent-name>[covid_19_india.csv]</parent-name>
+            <remote-alias>Time</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[covid_19_india.csv_AAC6241924DC4911BF46B4B75A781DA3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State/UnionTerritory</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State/UnionTerritory]</local-name>
+            <parent-name>[covid_19_india.csv]</parent-name>
+            <remote-alias>State/UnionTerritory</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[covid_19_india.csv_AAC6241924DC4911BF46B4B75A781DA3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ConfirmedIndianNational</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ConfirmedIndianNational]</local-name>
+            <parent-name>[covid_19_india.csv]</parent-name>
+            <remote-alias>ConfirmedIndianNational</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[covid_19_india.csv_AAC6241924DC4911BF46B4B75A781DA3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ConfirmedForeignNational</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ConfirmedForeignNational]</local-name>
+            <parent-name>[covid_19_india.csv]</parent-name>
+            <remote-alias>ConfirmedForeignNational</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[covid_19_india.csv_AAC6241924DC4911BF46B4B75A781DA3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cured</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cured]</local-name>
+            <parent-name>[covid_19_india.csv]</parent-name>
+            <remote-alias>Cured</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_19_india.csv_AAC6241924DC4911BF46B4B75A781DA3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Deaths]</local-name>
+            <parent-name>[covid_19_india.csv]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_19_india.csv_AAC6241924DC4911BF46B4B75A781DA3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Confirmed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Confirmed]</local-name>
+            <parent-name>[covid_19_india.csv]</parent-name>
+            <remote-alias>Confirmed</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_19_india.csv_AAC6241924DC4911BF46B4B75A781DA3]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Confirmed Foreign National' datatype='string' name='[ConfirmedForeignNational]' role='dimension' type='nominal' />
+      <column caption='Confirmed Indian National' datatype='string' name='[ConfirmedIndianNational]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Confirmed]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Cured]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Deaths]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Sno]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State/UnionTerritory]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='covid_19_india.csv' datatype='table' name='[__tableau_internal_object_id__].[covid_19_india.csv_AAC6241924DC4911BF46B4B75A781DA3]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[covid_19_india.csv_AAC6241924DC4911BF46B4B75A781DA3]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:covid_19_india.csv_AAC6241924DC4911BF46B4B75A781DA3:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Confirmed]' derivation='Sum' name='[sum:Confirmed:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Cured]' derivation='Sum' name='[sum:Cured:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Deaths]' derivation='Sum' name='[sum:Deaths:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sno]' derivation='Sum' name='[sum:Sno:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.181gqwt08czzz8168ky8r0b2f50b].[__tableau_internal_object_id__].[cnt:covid_19_india.csv_AAC6241924DC4911BF46B4B75A781DA3:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.181gqwt08czzz8168ky8r0b2f50b].[sum:Cured:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.181gqwt08czzz8168ky8r0b2f50b]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.181gqwt08czzz8168ky8r0b2f50b].[sum:Deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.181gqwt08czzz8168ky8r0b2f50b].[sum:Sno:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.181gqwt08czzz8168ky8r0b2f50b].[sum:Confirmed:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='covid_19_india.csv' id='covid_19_india.csv_AAC6241924DC4911BF46B4B75A781DA3'>
+            <properties context=''>
+              <relation connection='textscan.1kvoaqu19qz89f1anpw5c0fswl5k' name='covid_19_india.csv' table='[covid_19_india#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Sno' ordinal='0' />
+                  <column datatype='date' name='Date' ordinal='1' />
+                  <column datatype='string' name='Time' ordinal='2' />
+                  <column datatype='string' name='State/UnionTerritory' ordinal='3' />
+                  <column datatype='string' name='ConfirmedIndianNational' ordinal='4' />
+                  <column datatype='string' name='ConfirmedForeignNational' ordinal='5' />
+                  <column datatype='integer' name='Cured' ordinal='6' />
+                  <column datatype='integer' name='Deaths' ordinal='7' />
+                  <column datatype='integer' name='Confirmed' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='India_State_Boundary' inline='true' name='federated.1fs0c6j010aqii1eckbra1al04o3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='India_State_Boundary' name='ogrdirect.1a2r9451ps7uvb1bb7d3y1n6p55p'>
+            <connection class='ogrdirect' directory='C:/Users/sunny sharma/Desktop/Covid-19/covied19/India-State-and-Country-Shapefile-Updated-Jan-2020-master/India-State-and-Country-Shapefile-Updated-Jan-2020-master' filename='India_State_Boundary.shp' password='' server='' tablename='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='ogrdirect.1a2r9451ps7uvb1bb7d3y1n6p55p' name='India_State_Boundary.shp' table='[India_State_Boundary.shp]' type='table'>
+          <columns>
+            <column datatype='string' name='State_Name' ordinal='0' />
+            <column datatype='spatial' name='Geometry' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>State_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State_Name]</local-name>
+            <parent-name>[India_State_Boundary.shp]</parent-name>
+            <remote-alias>State_Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[India_State_Boundary.shp_C9BF3B08C2F442D9944C23D4279BF7AF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[India_State_Boundary.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[India_State_Boundary.shp_C9BF3B08C2F442D9944C23D4279BF7AF]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='State Name' datatype='string' name='[State_Name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='India_State_Boundary.shp' datatype='table' name='[__tableau_internal_object_id__].[India_State_Boundary.shp_C9BF3B08C2F442D9944C23D4279BF7AF]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='India_State_Boundary.shp' id='India_State_Boundary.shp_C9BF3B08C2F442D9944C23D4279BF7AF'>
+            <properties context=''>
+              <relation connection='ogrdirect.1a2r9451ps7uvb1bb7d3y1n6p55p' name='India_State_Boundary.shp' table='[India_State_Boundary.shp]' type='table'>
+                <columns>
+                  <column datatype='string' name='State_Name' ordinal='0' />
+                  <column datatype='spatial' name='Geometry' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='covid_vaccine_statewise' inline='true' name='federated.08yzlbs0kx6nez1btw8wg1c7xu3q' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='covid_vaccine_statewise' name='textscan.1m3czt610ezohd14amfrj0gt3b7b'>
+            <connection class='textscan' directory='C:/Users/sunny sharma/Desktop/Covid-19/covied19' filename='covid_vaccine_statewise.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1m3czt610ezohd14amfrj0gt3b7b' name='covid_vaccine_statewise.csv' table='[covid_vaccine_statewise#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='Updated On' ordinal='0' />
+            <column datatype='string' name='State' ordinal='1' />
+            <column datatype='real' name='Total Doses Administered' ordinal='2' />
+            <column datatype='real' name='Sessions' ordinal='3' />
+            <column datatype='real' name='Sites ' ordinal='4' />
+            <column datatype='real' name='First Dose Administered' ordinal='5' />
+            <column datatype='real' name='Second Dose Administered' ordinal='6' />
+            <column datatype='real' name='Male (Doses Administered)' ordinal='7' />
+            <column datatype='real' name='Female (Doses Administered)' ordinal='8' />
+            <column datatype='real' name='Transgender (Doses Administered)' ordinal='9' />
+            <column datatype='real' name='Covaxin (Doses Administered)' ordinal='10' />
+            <column datatype='real' name='CoviShield (Doses Administered)' ordinal='11' />
+            <column datatype='real' name='Sputnik V (Doses Administered)' ordinal='12' />
+            <column datatype='real' name='AEFI' ordinal='13' />
+            <column datatype='real' name='18-44 Years (Doses Administered)' ordinal='14' />
+            <column datatype='real' name='45-60 Years (Doses Administered)' ordinal='15' />
+            <column datatype='real' name='60+ Years (Doses Administered)' ordinal='16' />
+            <column datatype='real' name='18-44 Years(Individuals Vaccinated)' ordinal='17' />
+            <column datatype='real' name='45-60 Years(Individuals Vaccinated)' ordinal='18' />
+            <column datatype='real' name='60+ Years(Individuals Vaccinated)' ordinal='19' />
+            <column datatype='real' name='Male(Individuals Vaccinated)' ordinal='20' />
+            <column datatype='real' name='Female(Individuals Vaccinated)' ordinal='21' />
+            <column datatype='real' name='Transgender(Individuals Vaccinated)' ordinal='22' />
+            <column datatype='real' name='Total Individuals Vaccinated' ordinal='23' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Updated On</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Updated On]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>Updated On</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Doses Administered</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Doses Administered]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>Total Doses Administered</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sessions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sessions]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>Sessions</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sites </remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sites ]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>Sites </remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First Dose Administered</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[First Dose Administered]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>First Dose Administered</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Second Dose Administered</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Second Dose Administered]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>Second Dose Administered</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Male (Doses Administered)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Male (Doses Administered)]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>Male (Doses Administered)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Female (Doses Administered)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Female (Doses Administered)]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>Female (Doses Administered)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transgender (Doses Administered)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Transgender (Doses Administered)]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>Transgender (Doses Administered)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Covaxin (Doses Administered)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Covaxin (Doses Administered)]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>Covaxin (Doses Administered)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CoviShield (Doses Administered)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CoviShield (Doses Administered)]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>CoviShield (Doses Administered)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sputnik V (Doses Administered)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sputnik V (Doses Administered)]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>Sputnik V (Doses Administered)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AEFI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AEFI]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>AEFI</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>18-44 Years (Doses Administered)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[18-44 Years (Doses Administered)]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>18-44 Years (Doses Administered)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>45-60 Years (Doses Administered)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[45-60 Years (Doses Administered)]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>45-60 Years (Doses Administered)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>60+ Years (Doses Administered)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[60+ Years (Doses Administered)]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>60+ Years (Doses Administered)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>18-44 Years(Individuals Vaccinated)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[18-44 Years(Individuals Vaccinated)]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>18-44 Years(Individuals Vaccinated)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>45-60 Years(Individuals Vaccinated)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[45-60 Years(Individuals Vaccinated)]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>45-60 Years(Individuals Vaccinated)</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>60+ Years(Individuals Vaccinated)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[60+ Years(Individuals Vaccinated)]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>60+ Years(Individuals Vaccinated)</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Male(Individuals Vaccinated)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Male(Individuals Vaccinated)]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>Male(Individuals Vaccinated)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Female(Individuals Vaccinated)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Female(Individuals Vaccinated)]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>Female(Individuals Vaccinated)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transgender(Individuals Vaccinated)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Transgender(Individuals Vaccinated)]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>Transgender(Individuals Vaccinated)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Individuals Vaccinated</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Individuals Vaccinated]</local-name>
+            <parent-name>[covid_vaccine_statewise.csv]</parent-name>
+            <remote-alias>Total Individuals Vaccinated</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[sum:Covaxin (Doses Administered):qk]&quot;' value='Covaxin ' />
+          <alias key='&quot;[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[sum:CoviShield (Doses Administered):qk]&quot;' value='CoviShield' />
+          <alias key='&quot;[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[sum:Sputnik V (Doses Administered):qk]&quot;' value='Sputnik V ' />
+        </aliases>
+      </column>
+      <column caption='Aefi' datatype='real' name='[AEFI]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Covaxin (Doses Administered)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[CoviShield (Doses Administered)]' role='measure' type='quantitative' />
+      <column caption='Sites' datatype='real' name='[Sites ]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Sputnik V (Doses Administered)]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='covid_vaccine_statewise.csv' datatype='table' name='[__tableau_internal_object_id__].[covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8]' role='measure' type='quantitative' />
+      <column-instance column='[Covaxin (Doses Administered)]' derivation='Sum' name='[sum:Covaxin (Doses Administered):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CoviShield (Doses Administered)]' derivation='Sum' name='[sum:CoviShield (Doses Administered):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sputnik V (Doses Administered)]' derivation='Sum' name='[sum:Sputnik V (Doses Administered):qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='covid_vaccine_statewise.csv' id='covid_vaccine_statewise.csv_731F1755A669485FB92DA6FB70B122C8'>
+            <properties context=''>
+              <relation connection='textscan.1m3czt610ezohd14amfrj0gt3b7b' name='covid_vaccine_statewise.csv' table='[covid_vaccine_statewise#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='date' name='Updated On' ordinal='0' />
+                  <column datatype='string' name='State' ordinal='1' />
+                  <column datatype='real' name='Total Doses Administered' ordinal='2' />
+                  <column datatype='real' name='Sessions' ordinal='3' />
+                  <column datatype='real' name='Sites ' ordinal='4' />
+                  <column datatype='real' name='First Dose Administered' ordinal='5' />
+                  <column datatype='real' name='Second Dose Administered' ordinal='6' />
+                  <column datatype='real' name='Male (Doses Administered)' ordinal='7' />
+                  <column datatype='real' name='Female (Doses Administered)' ordinal='8' />
+                  <column datatype='real' name='Transgender (Doses Administered)' ordinal='9' />
+                  <column datatype='real' name='Covaxin (Doses Administered)' ordinal='10' />
+                  <column datatype='real' name='CoviShield (Doses Administered)' ordinal='11' />
+                  <column datatype='real' name='Sputnik V (Doses Administered)' ordinal='12' />
+                  <column datatype='real' name='AEFI' ordinal='13' />
+                  <column datatype='real' name='18-44 Years (Doses Administered)' ordinal='14' />
+                  <column datatype='real' name='45-60 Years (Doses Administered)' ordinal='15' />
+                  <column datatype='real' name='60+ Years (Doses Administered)' ordinal='16' />
+                  <column datatype='real' name='18-44 Years(Individuals Vaccinated)' ordinal='17' />
+                  <column datatype='real' name='45-60 Years(Individuals Vaccinated)' ordinal='18' />
+                  <column datatype='real' name='60+ Years(Individuals Vaccinated)' ordinal='19' />
+                  <column datatype='real' name='Male(Individuals Vaccinated)' ordinal='20' />
+                  <column datatype='real' name='Female(Individuals Vaccinated)' ordinal='21' />
+                  <column datatype='real' name='Transgender(Individuals Vaccinated)' ordinal='22' />
+                  <column datatype='real' name='Total Individuals Vaccinated' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='AgeGroupDetails' inline='true' name='federated.1k89gdx1rbz42q10wkjjp1hzzgxt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='AgeGroupDetails' name='textscan.08wfjtv1lcy1r81dhhd301vnp5py'>
+            <connection class='textscan' directory='C:/Users/sunny sharma/Desktop/Covid-19/covied19' filename='AgeGroupDetails.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.08wfjtv1lcy1r81dhhd301vnp5py' name='AgeGroupDetails.csv' table='[AgeGroupDetails#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Sno' ordinal='0' />
+            <column datatype='string' name='AgeGroup' ordinal='1' />
+            <column datatype='integer' name='TotalCases' ordinal='2' />
+            <column datatype='real' name='Percentage' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[AgeGroupDetails.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sno</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sno]</local-name>
+            <parent-name>[AgeGroupDetails.csv]</parent-name>
+            <remote-alias>Sno</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AgeGroupDetails.csv_A884FB8DE2E44F9B894640CBAC2E86F1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AgeGroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AgeGroup]</local-name>
+            <parent-name>[AgeGroupDetails.csv]</parent-name>
+            <remote-alias>AgeGroup</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[AgeGroupDetails.csv_A884FB8DE2E44F9B894640CBAC2E86F1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalCases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalCases]</local-name>
+            <parent-name>[AgeGroupDetails.csv]</parent-name>
+            <remote-alias>TotalCases</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AgeGroupDetails.csv_A884FB8DE2E44F9B894640CBAC2E86F1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Percentage]</local-name>
+            <parent-name>[AgeGroupDetails.csv]</parent-name>
+            <remote-alias>Percentage</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AgeGroupDetails.csv_A884FB8DE2E44F9B894640CBAC2E86F1]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age Group' datatype='string' name='[AgeGroup]' role='dimension' type='nominal' />
+      <column caption='Total Cases' datatype='integer' name='[TotalCases]' role='measure' type='quantitative' />
+      <column caption='AgeGroupDetails.csv' datatype='table' name='[__tableau_internal_object_id__].[AgeGroupDetails.csv_A884FB8DE2E44F9B894640CBAC2E86F1]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='AgeGroupDetails.csv' id='AgeGroupDetails.csv_A884FB8DE2E44F9B894640CBAC2E86F1'>
+            <properties context=''>
+              <relation connection='textscan.08wfjtv1lcy1r81dhhd301vnp5py' name='AgeGroupDetails.csv' table='[AgeGroupDetails#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Sno' ordinal='0' />
+                  <column datatype='string' name='AgeGroup' ordinal='1' />
+                  <column datatype='integer' name='TotalCases' ordinal='2' />
+                  <column datatype='real' name='Percentage' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='IndividualDetails' inline='true' name='federated.16uodij0ubzam71esqkjk0nwnic9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='IndividualDetails' name='textscan.0bznrf915o42t816cvyz408w68wp'>
+            <connection class='textscan' directory='C:/Users/sunny sharma/Desktop/Covid-19/covied19' filename='IndividualDetails.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0bznrf915o42t816cvyz408w68wp' name='IndividualDetails.csv' table='[IndividualDetails#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='government_id' ordinal='1' />
+            <column datatype='date' name='diagnosed_date' ordinal='2' />
+            <column datatype='integer' name='age' ordinal='3' />
+            <column datatype='string' name='gender' ordinal='4' />
+            <column datatype='string' name='detected_city' ordinal='5' />
+            <column datatype='string' name='detected_district' ordinal='6' />
+            <column datatype='string' name='detected_state' ordinal='7' />
+            <column datatype='string' name='nationality' ordinal='8' />
+            <column datatype='string' name='current_status' ordinal='9' />
+            <column datatype='date' name='status_change_date' ordinal='10' />
+            <column datatype='string' name='notes' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[IndividualDetails.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[IndividualDetails.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IndividualDetails.csv_1917BC78F4D54BFF94E6EE53B98F82A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>government_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[government_id]</local-name>
+            <parent-name>[IndividualDetails.csv]</parent-name>
+            <remote-alias>government_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IndividualDetails.csv_1917BC78F4D54BFF94E6EE53B98F82A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diagnosed_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[diagnosed_date]</local-name>
+            <parent-name>[IndividualDetails.csv]</parent-name>
+            <remote-alias>diagnosed_date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IndividualDetails.csv_1917BC78F4D54BFF94E6EE53B98F82A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[IndividualDetails.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IndividualDetails.csv_1917BC78F4D54BFF94E6EE53B98F82A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[IndividualDetails.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IndividualDetails.csv_1917BC78F4D54BFF94E6EE53B98F82A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detected_city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[detected_city]</local-name>
+            <parent-name>[IndividualDetails.csv]</parent-name>
+            <remote-alias>detected_city</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IndividualDetails.csv_1917BC78F4D54BFF94E6EE53B98F82A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detected_district</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[detected_district]</local-name>
+            <parent-name>[IndividualDetails.csv]</parent-name>
+            <remote-alias>detected_district</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IndividualDetails.csv_1917BC78F4D54BFF94E6EE53B98F82A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detected_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[detected_state]</local-name>
+            <parent-name>[IndividualDetails.csv]</parent-name>
+            <remote-alias>detected_state</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IndividualDetails.csv_1917BC78F4D54BFF94E6EE53B98F82A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nationality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nationality]</local-name>
+            <parent-name>[IndividualDetails.csv]</parent-name>
+            <remote-alias>nationality</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IndividualDetails.csv_1917BC78F4D54BFF94E6EE53B98F82A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>current_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[current_status]</local-name>
+            <parent-name>[IndividualDetails.csv]</parent-name>
+            <remote-alias>current_status</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IndividualDetails.csv_1917BC78F4D54BFF94E6EE53B98F82A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status_change_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[status_change_date]</local-name>
+            <parent-name>[IndividualDetails.csv]</parent-name>
+            <remote-alias>status_change_date</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IndividualDetails.csv_1917BC78F4D54BFF94E6EE53B98F82A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>notes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[notes]</local-name>
+            <parent-name>[IndividualDetails.csv]</parent-name>
+            <remote-alias>notes</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IndividualDetails.csv_1917BC78F4D54BFF94E6EE53B98F82A7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='IndividualDetails.csv' datatype='table' name='[__tableau_internal_object_id__].[IndividualDetails.csv_1917BC78F4D54BFF94E6EE53B98F82A7]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Current Status' datatype='string' name='[current_status]' role='dimension' type='nominal' />
+      <column caption='Detected City' datatype='string' name='[detected_city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Detected District' datatype='string' name='[detected_district]' role='dimension' type='nominal' />
+      <column caption='Detected State' datatype='string' name='[detected_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Diagnosed Date' datatype='date' name='[diagnosed_date]' role='dimension' type='ordinal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;F&quot;' value='Female' />
+          <alias key='&quot;M&quot;' value='Male' />
+        </aliases>
+      </column>
+      <column caption='Government Id' datatype='string' name='[government_id]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Nationality' datatype='string' name='[nationality]' role='dimension' type='nominal' />
+      <column caption='Notes' datatype='string' name='[notes]' role='dimension' type='nominal' />
+      <column caption='Status Change Date' datatype='date' name='[status_change_date]' role='dimension' type='ordinal' />
+      <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='detected_state, detected_city'>
+          <field>[detected_state]</field>
+          <field>[detected_city]</field>
+        </drill-path>
+      </drill-paths>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:gender:nk]' palette='green_10_0' type='palette'>
+            <map to='#24693d'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='IndividualDetails.csv' id='IndividualDetails.csv_1917BC78F4D54BFF94E6EE53B98F82A7'>
+            <properties context=''>
+              <relation connection='textscan.0bznrf915o42t816cvyz408w68wp' name='IndividualDetails.csv' table='[IndividualDetails#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='government_id' ordinal='1' />
+                  <column datatype='date' name='diagnosed_date' ordinal='2' />
+                  <column datatype='integer' name='age' ordinal='3' />
+                  <column datatype='string' name='gender' ordinal='4' />
+                  <column datatype='string' name='detected_city' ordinal='5' />
+                  <column datatype='string' name='detected_district' ordinal='6' />
+                  <column datatype='string' name='detected_state' ordinal='7' />
+                  <column datatype='string' name='nationality' ordinal='8' />
+                  <column datatype='string' name='current_status' ordinal='9' />
+                  <column datatype='date' name='status_change_date' ordinal='10' />
+                  <column datatype='string' name='notes' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='ICMRTestingLabs' inline='true' name='federated.04q647916krrsg1bhibj10bv7367' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ICMRTestingLabs' name='textscan.1wxz80502kelp118lbzin1bwuxsj'>
+            <connection class='textscan' directory='C:/Users/sunny sharma/Desktop/Covid-19/covied19' filename='ICMRTestingLabs.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1wxz80502kelp118lbzin1bwuxsj' name='ICMRTestingLabs.csv' table='[ICMRTestingLabs#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='lab' ordinal='0' />
+            <column datatype='string' name='address' ordinal='1' />
+            <column datatype='integer' name='pincode' ordinal='2' />
+            <column datatype='string' name='city' ordinal='3' />
+            <column datatype='string' name='state' ordinal='4' />
+            <column datatype='string' name='type' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ICMRTestingLabs.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lab</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lab]</local-name>
+            <parent-name>[ICMRTestingLabs.csv]</parent-name>
+            <remote-alias>lab</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ICMRTestingLabs.csv_83E7D940E5084CC2B388BA5B577652F8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[address]</local-name>
+            <parent-name>[ICMRTestingLabs.csv]</parent-name>
+            <remote-alias>address</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ICMRTestingLabs.csv_83E7D940E5084CC2B388BA5B577652F8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pincode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pincode]</local-name>
+            <parent-name>[ICMRTestingLabs.csv]</parent-name>
+            <remote-alias>pincode</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ICMRTestingLabs.csv_83E7D940E5084CC2B388BA5B577652F8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[ICMRTestingLabs.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ICMRTestingLabs.csv_83E7D940E5084CC2B388BA5B577652F8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[ICMRTestingLabs.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ICMRTestingLabs.csv_83E7D940E5084CC2B388BA5B577652F8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[ICMRTestingLabs.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ICMRTestingLabs.csv_83E7D940E5084CC2B388BA5B577652F8]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Title' datatype='string' name='[Calculation_118500973433749521]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Covid-19 in India Dashboard Analysis&quot;' />
+      </column>
+      <column caption='ICMRTestingLabs.csv' datatype='table' name='[__tableau_internal_object_id__].[ICMRTestingLabs.csv_83E7D940E5084CC2B388BA5B577652F8]' role='measure' type='quantitative' />
+      <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Lab' datatype='string' name='[lab]' role='dimension' type='nominal' />
+      <column caption='Pincode' datatype='integer' name='[pincode]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <drill-paths>
+        <drill-path name='state, city'>
+          <field>[state]</field>
+          <field>[city]</field>
+        </drill-path>
+      </drill-paths>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ICMRTestingLabs.csv' id='ICMRTestingLabs.csv_83E7D940E5084CC2B388BA5B577652F8'>
+            <properties context=''>
+              <relation connection='textscan.1wxz80502kelp118lbzin1bwuxsj' name='ICMRTestingLabs.csv' table='[ICMRTestingLabs#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='lab' ordinal='0' />
+                  <column datatype='string' name='address' ordinal='1' />
+                  <column datatype='integer' name='pincode' ordinal='2' />
+                  <column datatype='string' name='city' ordinal='3' />
+                  <column datatype='string' name='state' ordinal='4' />
+                  <column datatype='string' name='type' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='StatewiseTestingDetails' inline='true' name='federated.01jlunz07tq2ej125r03i0deu8rb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='StatewiseTestingDetails' name='textscan.1onfrq00tnzf6710y6r191ogt2ql'>
+            <connection class='textscan' directory='C:/Users/sunny sharma/Desktop/Covid-19/covied19' filename='StatewiseTestingDetails.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1onfrq00tnzf6710y6r191ogt2ql' name='StatewiseTestingDetails.csv' table='[StatewiseTestingDetails#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='string' name='State' ordinal='1' />
+            <column datatype='real' name='TotalSamples' ordinal='2' />
+            <column datatype='integer' name='Negative' ordinal='3' />
+            <column datatype='real' name='Positive' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[StatewiseTestingDetails.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[StatewiseTestingDetails.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[StatewiseTestingDetails.csv_ACC162036BD746ABBE05BF1832824C35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[StatewiseTestingDetails.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[StatewiseTestingDetails.csv_ACC162036BD746ABBE05BF1832824C35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalSamples</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalSamples]</local-name>
+            <parent-name>[StatewiseTestingDetails.csv]</parent-name>
+            <remote-alias>TotalSamples</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[StatewiseTestingDetails.csv_ACC162036BD746ABBE05BF1832824C35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Negative</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Negative]</local-name>
+            <parent-name>[StatewiseTestingDetails.csv]</parent-name>
+            <remote-alias>Negative</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[StatewiseTestingDetails.csv_ACC162036BD746ABBE05BF1832824C35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Positive</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Positive]</local-name>
+            <parent-name>[StatewiseTestingDetails.csv]</parent-name>
+            <remote-alias>Positive</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[StatewiseTestingDetails.csv_ACC162036BD746ABBE05BF1832824C35]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Negative]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Positive]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Total Samples' datatype='real' name='[TotalSamples]' role='measure' type='quantitative' />
+      <column caption='StatewiseTestingDetails.csv' datatype='table' name='[__tableau_internal_object_id__].[StatewiseTestingDetails.csv_ACC162036BD746ABBE05BF1832824C35]' role='measure' type='quantitative' />
+      <column-instance column='[Negative]' derivation='Sum' name='[sum:Negative:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Positive]' derivation='Sum' name='[sum:Positive:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TotalSamples]' derivation='Sum' name='[sum:TotalSamples:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.01jlunz07tq2ej125r03i0deu8rb].[sum:Negative:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.01jlunz07tq2ej125r03i0deu8rb].[sum:Positive:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.01jlunz07tq2ej125r03i0deu8rb].[sum:TotalSamples:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='StatewiseTestingDetails.csv' id='StatewiseTestingDetails.csv_ACC162036BD746ABBE05BF1832824C35'>
+            <properties context=''>
+              <relation connection='textscan.1onfrq00tnzf6710y6r191ogt2ql' name='StatewiseTestingDetails.csv' table='[StatewiseTestingDetails#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='string' name='State' ordinal='1' />
+                  <column datatype='real' name='TotalSamples' ordinal='2' />
+                  <column datatype='integer' name='Negative' ordinal='3' />
+                  <column datatype='real' name='Positive' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='AgeGroupDetails (2)' inline='true' name='federated.01ue0ti06g65xf10ve7mv11hd7ah' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='AgeGroupDetails' name='textscan.1owjktv0ql3dqa13z9veo0x1krh6'>
+            <connection class='textscan' directory='C:/Users/sunny sharma/Desktop/Covid-19/covied19' filename='AgeGroupDetails.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1owjktv0ql3dqa13z9veo0x1krh6' name='AgeGroupDetails.csv' table='[AgeGroupDetails#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Sno' ordinal='0' />
+            <column datatype='string' name='AgeGroup' ordinal='1' />
+            <column datatype='integer' name='TotalCases' ordinal='2' />
+            <column datatype='real' name='Percentage' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[AgeGroupDetails.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sno</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sno]</local-name>
+            <parent-name>[AgeGroupDetails.csv]</parent-name>
+            <remote-alias>Sno</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AgeGroupDetails.csv_78BF8464E3AA4DACB947B3B64D3B2D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AgeGroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AgeGroup]</local-name>
+            <parent-name>[AgeGroupDetails.csv]</parent-name>
+            <remote-alias>AgeGroup</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[AgeGroupDetails.csv_78BF8464E3AA4DACB947B3B64D3B2D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalCases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalCases]</local-name>
+            <parent-name>[AgeGroupDetails.csv]</parent-name>
+            <remote-alias>TotalCases</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AgeGroupDetails.csv_78BF8464E3AA4DACB947B3B64D3B2D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Percentage]</local-name>
+            <parent-name>[AgeGroupDetails.csv]</parent-name>
+            <remote-alias>Percentage</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AgeGroupDetails.csv_78BF8464E3AA4DACB947B3B64D3B2D6B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age Group' datatype='string' name='[AgeGroup]' role='dimension' type='nominal' />
+      <column caption='Total Cases' datatype='integer' name='[TotalCases]' role='measure' type='quantitative' />
+      <column caption='AgeGroupDetails.csv' datatype='table' name='[__tableau_internal_object_id__].[AgeGroupDetails.csv_78BF8464E3AA4DACB947B3B64D3B2D6B]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='AgeGroupDetails.csv' id='AgeGroupDetails.csv_78BF8464E3AA4DACB947B3B64D3B2D6B'>
+            <properties context=''>
+              <relation connection='textscan.1owjktv0ql3dqa13z9veo0x1krh6' name='AgeGroupDetails.csv' table='[AgeGroupDetails#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Sno' ordinal='0' />
+                  <column datatype='string' name='AgeGroup' ordinal='1' />
+                  <column datatype='integer' name='TotalCases' ordinal='2' />
+                  <column datatype='real' name='Percentage' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <datasource-relationships>
+    <datasource-dependencies datasource='federated.181gqwt08czzz8168ky8r0b2f50b'>
+      <column datatype='string' name='[State/UnionTerritory]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[State/UnionTerritory]' derivation='None' name='[none:State/UnionTerritory:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.1fs0c6j010aqii1eckbra1al04o3'>
+      <column caption='State Name' datatype='string' name='[State_Name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[State_Name]' derivation='None' name='[none:State_Name:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-relationship source='federated.181gqwt08czzz8168ky8r0b2f50b' target='federated.1fs0c6j010aqii1eckbra1al04o3'>
+      <column-mapping>
+        <map key='[federated.181gqwt08czzz8168ky8r0b2f50b].[none:State/UnionTerritory:nk]' value='[federated.1fs0c6j010aqii1eckbra1al04o3].[none:State_Name:nk]' />
+      </column-mapping>
+    </datasource-relationship>
+  </datasource-relationships>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_5BEAD74111C8484088FC0760741A0C81]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Covid-19 Dashboard' type='sheet' worksheet='Map:Total deaths by state' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Covid-19 Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter1' name='[Action2_3182920ED7A847D9B64F7D7F2EF1D3F3]'>
+      <source dashboard='Covid-19 Dashboard' type='sheet' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Covid-19 Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Age Group Details'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AgeGroupDetails' name='federated.1k89gdx1rbz42q10wkjjp1hzzgxt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1k89gdx1rbz42q10wkjjp1hzzgxt'>
+            <column caption='Age Group' datatype='string' name='[AgeGroup]' role='dimension' type='nominal' />
+            <column caption='0' datatype='integer' name='[Calculation_118500973426855950]' role='measure' type='quantitative' user:unnamed='Age Group Details'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='Total Cases' datatype='integer' name='[TotalCases]' role='measure' type='quantitative' />
+            <column-instance column='[AgeGroup]' derivation='None' name='[none:AgeGroup:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TotalCases]' derivation='Sum' name='[pcto:sum:TotalCases:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_118500973426855950]' derivation='Sum' name='[sum:Calculation_118500973426855950:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TotalCases]' derivation='Sum' name='[sum:TotalCases:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1k89gdx1rbz42q10wkjjp1hzzgxt].[sum:Calculation_118500973426855950:qk]' field-type='quantitative' fold='true' major-origin='0' major-show='false' major-spacing='1' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1k89gdx1rbz42q10wkjjp1hzzgxt].[sum:Calculation_118500973426855950:qk]' scope='rows' value='' />
+            <encoding attr='space' class='0' field='[federated.1k89gdx1rbz42q10wkjjp1hzzgxt].[sum:Calculation_118500973426855950:qk]' field-type='quantitative' major-origin='0' major-show='false' major-spacing='1' scope='rows' type='space' />
+            <format attr='title' class='1' field='[federated.1k89gdx1rbz42q10wkjjp1hzzgxt].[sum:Calculation_118500973426855950:qk]' scope='rows' value='' />
+            <format attr='width' field='[federated.1k89gdx1rbz42q10wkjjp1hzzgxt].[sum:Calculation_118500973426855950:qk]' value='10' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='421' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#dfe7e8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d4d4d4' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1k89gdx1rbz42q10wkjjp1hzzgxt].[sum:Calculation_118500973426855950:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1k89gdx1rbz42q10wkjjp1hzzgxt].[none:AgeGroup:nk]' />
+              <size column='[federated.1k89gdx1rbz42q10wkjjp1hzzgxt].[pcto:sum:TotalCases:qk]' />
+              <text column='[federated.1k89gdx1rbz42q10wkjjp1hzzgxt].[none:AgeGroup:nk]' />
+              <text column='[federated.1k89gdx1rbz42q10wkjjp1hzzgxt].[sum:TotalCases:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4172928333282471' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#d4d4d4' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1k89gdx1rbz42q10wkjjp1hzzgxt].[sum:Calculation_118500973426855950:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d4d4d4' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1k89gdx1rbz42q10wkjjp1hzzgxt].[sum:Calculation_118500973426855950:qk] + [federated.1k89gdx1rbz42q10wkjjp1hzzgxt].[sum:Calculation_118500973426855950:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{28F1852C-A171-4C03-B571-B51C9A104BC7}' />
+    </worksheet>
+    <worksheet name='Covid cases by state'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid_19_india' name='federated.181gqwt08czzz8168ky8r0b2f50b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.181gqwt08czzz8168ky8r0b2f50b'>
+            <column datatype='integer' name='[Confirmed]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Cured]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Deaths]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State/UnionTerritory]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State/UnionTerritory]' derivation='None' name='[none:State/UnionTerritory:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Confirmed]' derivation='Sum' name='[sum:Confirmed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cured]' derivation='Sum' name='[sum:Cured:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Deaths]' derivation='Sum' name='[sum:Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.181gqwt08czzz8168ky8r0b2f50b].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.181gqwt08czzz8168ky8r0b2f50b].[sum:Confirmed:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.181gqwt08czzz8168ky8r0b2f50b].[sum:Cured:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.181gqwt08czzz8168ky8r0b2f50b].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.181gqwt08czzz8168ky8r0b2f50b].[sum:Cured:qk]&quot;</bucket>
+              <bucket>&quot;[federated.181gqwt08czzz8168ky8r0b2f50b].[sum:Confirmed:qk]&quot;</bucket>
+              <bucket>&quot;[federated.181gqwt08czzz8168ky8r0b2f50b].[sum:Deaths:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.181gqwt08czzz8168ky8r0b2f50b].[none:State/UnionTerritory:nk]'>
+            <groupfilter function='level-members' level='[none:State/UnionTerritory:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.181gqwt08czzz8168ky8r0b2f50b].[:Measure Names]</column>
+            <column>[federated.181gqwt08czzz8168ky8r0b2f50b].[none:State/UnionTerritory:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.181gqwt08czzz8168ky8r0b2f50b].[sum:Deaths:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.181gqwt08czzz8168ky8r0b2f50b].[Multiple Values]' scope='rows' value='Confirmed &amp; cured' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f6eee3' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='normal' />
+            <format attr='font-family' value='Arial' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.181gqwt08czzz8168ky8r0b2f50b].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.181gqwt08czzz8168ky8r0b2f50b].[Multiple Values]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.181gqwt08czzz8168ky8r0b2f50b].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.181gqwt08czzz8168ky8r0b2f50b].[sum:Deaths:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.181gqwt08czzz8168ky8r0b2f50b].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.181gqwt08czzz8168ky8r0b2f50b].[Multiple Values] + [federated.181gqwt08czzz8168ky8r0b2f50b].[sum:Deaths:qk])</rows>
+        <cols>[federated.181gqwt08czzz8168ky8r0b2f50b].[none:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{92160597-3DB8-40A6-9984-403B245F1460}' />
+    </worksheet>
+    <worksheet name='Doses admministrated by vaccine'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid_vaccine_statewise' name='federated.08yzlbs0kx6nez1btw8wg1c7xu3q' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08yzlbs0kx6nez1btw8wg1c7xu3q'>
+            <column datatype='real' name='[Covaxin (Doses Administered)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[CoviShield (Doses Administered)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sputnik V (Doses Administered)]' role='measure' type='quantitative' />
+            <column-instance column='[Covaxin (Doses Administered)]' derivation='Sum' name='[sum:Covaxin (Doses Administered):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CoviShield (Doses Administered)]' derivation='Sum' name='[sum:CoviShield (Doses Administered):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sputnik V (Doses Administered)]' derivation='Sum' name='[sum:Sputnik V (Doses Administered):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[sum:Covaxin (Doses Administered):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[sum:CoviShield (Doses Administered):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[sum:Sputnik V (Doses Administered):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[Multiple Values]' scope='cols' value='Title' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' scope='cols' value='Arial' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#555555' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Arial' />
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[:Measure Names]</rows>
+        <cols>[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{0AEADCE9-F0FC-4EFC-AB77-61CACA27FB18}' />
+    </worksheet>
+    <worksheet name='First vs Second dose adminstrated.'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid_vaccine_statewise' name='federated.08yzlbs0kx6nez1btw8wg1c7xu3q' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08yzlbs0kx6nez1btw8wg1c7xu3q'>
+            <column datatype='real' name='[First Dose Administered]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Second Dose Administered]' role='measure' type='quantitative' />
+            <column-instance column='[First Dose Administered]' derivation='Sum' name='[sum:First Dose Administered:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Second Dose Administered]' derivation='Sum' name='[sum:Second Dose Administered:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[sum:First Dose Administered:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[sum:Second Dose Administered:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[Multiple Values]' scope='cols' value='Title' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e2e6f0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Arial' />
+            <format attr='font-size' value='10' />
+            <format attr='color' value='#1b1b1b' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[:Measure Names]</rows>
+        <cols>[federated.08yzlbs0kx6nez1btw8wg1c7xu3q].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{218C789F-DEBE-4406-A607-23B1A5D3C546}' />
+    </worksheet>
+    <worksheet name='Gender  without missing value'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='IndividualDetails' name='federated.16uodij0ubzam71esqkjk0nwnic9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16uodij0ubzam71esqkjk0nwnic9'>
+            <column caption='0' datatype='integer' name='[Calculation_118500973429907472]' role='measure' type='quantitative' user:unnamed='Gender  without missing value'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column-instance column='[gender]' derivation='Count' name='[cnt:gender:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='Female' />
+                <alias key='&quot;M&quot;' value='Male' />
+              </aliases>
+            </column>
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='Count' name='[pcto:cnt:gender:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_118500973429907472]' derivation='Sum' name='[sum:Calculation_118500973429907472:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16uodij0ubzam71esqkjk0nwnic9].[none:gender:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:gender:nk]' member='&quot;F&quot;' />
+              <groupfilter function='member' level='[none:gender:nk]' member='&quot;M&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.16uodij0ubzam71esqkjk0nwnic9].[none:gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.16uodij0ubzam71esqkjk0nwnic9].[sum:Calculation_118500973429907472:qk]' field-type='quantitative' fold='true' major-origin='0' major-show='false' major-spacing='1' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.16uodij0ubzam71esqkjk0nwnic9].[sum:Calculation_118500973429907472:qk]' scope='rows' value='' />
+            <encoding attr='space' class='0' field='[federated.16uodij0ubzam71esqkjk0nwnic9].[sum:Calculation_118500973429907472:qk]' field-type='quantitative' major-origin='0' major-show='false' major-spacing='1' scope='rows' type='space' />
+            <format attr='title' class='1' field='[federated.16uodij0ubzam71esqkjk0nwnic9].[sum:Calculation_118500973429907472:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e8edda' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Arial' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.16uodij0ubzam71esqkjk0nwnic9].[sum:Calculation_118500973429907472:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.16uodij0ubzam71esqkjk0nwnic9].[none:gender:nk]' />
+              <size column='[federated.16uodij0ubzam71esqkjk0nwnic9].[cnt:gender:qk]' />
+              <text column='[federated.16uodij0ubzam71esqkjk0nwnic9].[pcto:cnt:gender:qk]' />
+              <text column='[federated.16uodij0ubzam71esqkjk0nwnic9].[none:gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.5492265224456787' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.16uodij0ubzam71esqkjk0nwnic9].[sum:Calculation_118500973429907472:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1.2413811683654785' />
+                <format attr='mark-color' value='#d3b348' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.16uodij0ubzam71esqkjk0nwnic9].[sum:Calculation_118500973429907472:qk] + [federated.16uodij0ubzam71esqkjk0nwnic9].[sum:Calculation_118500973429907472:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{2F3586CE-9D74-4812-8297-229872B51706}' />
+    </worksheet>
+    <worksheet name='ICMR Testing Labs in each state'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>ICMR Testing Labs in each state</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ICMRTestingLabs' name='federated.04q647916krrsg1bhibj10bv7367' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04q647916krrsg1bhibj10bv7367'>
+            <column-instance column='[lab]' derivation='Count' name='[cnt:lab:qk]' pivot='key' type='quantitative' />
+            <column caption='Lab' datatype='string' name='[lab]' role='dimension' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.04q647916krrsg1bhibj10bv7367].[none:state:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.04q647916krrsg1bhibj10bv7367].[cnt:lab:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.04q647916krrsg1bhibj10bv7367].[cnt:lab:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='60' />
+            <format attr='cell-h' value='40' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#555555' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-family' value='Arial' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.04q647916krrsg1bhibj10bv7367].[cnt:lab:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04q647916krrsg1bhibj10bv7367].[none:state:nk]</rows>
+        <cols>[federated.04q647916krrsg1bhibj10bv7367].[cnt:lab:qk]</cols>
+      </table>
+      <simple-id uuid='{2D2EBAD8-33C7-41A7-9AE6-702C9185AB18}' />
+    </worksheet>
+    <worksheet name='Map:Total deaths by state'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='India_State_Boundary' name='federated.1fs0c6j010aqii1eckbra1al04o3' />
+            <datasource caption='covid_19_india' name='federated.181gqwt08czzz8168ky8r0b2f50b' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.181gqwt08czzz8168ky8r0b2f50b'>
+            <column datatype='integer' name='[Deaths]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State/UnionTerritory]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State/UnionTerritory]' derivation='None' name='[none:State/UnionTerritory:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Deaths]' derivation='Sum' name='[sum:Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1fs0c6j010aqii1eckbra1al04o3'>
+            <column datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column caption='India_State_Boundary.shp' datatype='table' name='[__tableau_internal_object_id__].[India_State_Boundary.shp_C9BF3B08C2F442D9944C23D4279BF7AF]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[India_State_Boundary.shp_C9BF3B08C2F442D9944C23D4279BF7AF]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:India_State_Boundary.shp_C9BF3B08C2F442D9944C23D4279BF7AF:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1fs0c6j010aqii1eckbra1al04o3].[Longitude (generated)]' field-type='quantitative' max='11491172.692207443' min='6169750.3361835042' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1fs0c6j010aqii1eckbra1al04o3].[Latitude (generated)]' field-type='quantitative' max='5376243.8886719039' min='286187.66687831015' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.181gqwt08czzz8168ky8r0b2f50b].[sum:Deaths:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#666666' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='background-color' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.181gqwt08czzz8168ky8r0b2f50b].[sum:Deaths:qk]' />
+              <text column='[federated.181gqwt08czzz8168ky8r0b2f50b].[none:State/UnionTerritory:nk]' />
+              <geometry column='[federated.1fs0c6j010aqii1eckbra1al04o3].[clct:Geometry:nk]' />
+              <lod column='[federated.1fs0c6j010aqii1eckbra1al04o3].[clct:Geometry:nk]' />
+              <lod column='[federated.1fs0c6j010aqii1eckbra1al04o3].[__tableau_internal_object_id__].[cnt:India_State_Boundary.shp_C9BF3B08C2F442D9944C23D4279BF7AF:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fs0c6j010aqii1eckbra1al04o3].[Latitude (generated)]</rows>
+        <cols>[federated.1fs0c6j010aqii1eckbra1al04o3].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{88BB5D4A-20DC-4201-B741-A10A23BD0E68}' />
+    </worksheet>
+    <worksheet name='Statewise Testing Details'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='StatewiseTestingDetails' name='federated.01jlunz07tq2ej125r03i0deu8rb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01jlunz07tq2ej125r03i0deu8rb'>
+            <column datatype='integer' name='[Negative]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Positive]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Total Samples' datatype='real' name='[TotalSamples]' role='measure' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Negative]' derivation='Sum' name='[sum:Negative:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Positive]' derivation='Sum' name='[sum:Positive:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TotalSamples]' derivation='Sum' name='[sum:TotalSamples:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01jlunz07tq2ej125r03i0deu8rb].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01jlunz07tq2ej125r03i0deu8rb].[sum:Negative:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01jlunz07tq2ej125r03i0deu8rb].[sum:Positive:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01jlunz07tq2ej125r03i0deu8rb].[sum:TotalSamples:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.01jlunz07tq2ej125r03i0deu8rb].[none:State:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Uttar Pradesh&quot;</bucket>
+              <bucket>&quot;Andhra Pradesh&quot;</bucket>
+              <bucket>&quot;Maharashtra&quot;</bucket>
+              <bucket>&quot;Bihar&quot;</bucket>
+              <bucket>&quot;Karnataka&quot;</bucket>
+              <bucket>&quot;Tamil Nadu&quot;</bucket>
+              <bucket>&quot;Gujarat&quot;</bucket>
+              <bucket>&quot;Kerala&quot;</bucket>
+              <bucket>&quot;Delhi&quot;</bucket>
+              <bucket>&quot;Jharkhand&quot;</bucket>
+              <bucket>&quot;Jammu and Kashmir&quot;</bucket>
+              <bucket>&quot;Madhya Pradesh&quot;</bucket>
+              <bucket>&quot;Telangana&quot;</bucket>
+              <bucket>&quot;Rajasthan&quot;</bucket>
+              <bucket>&quot;West Bengal&quot;</bucket>
+              <bucket>&quot;Odisha&quot;</bucket>
+              <bucket>&quot;Assam&quot;</bucket>
+              <bucket>&quot;Haryana&quot;</bucket>
+              <bucket>&quot;Punjab&quot;</bucket>
+              <bucket>&quot;Uttarakhand&quot;</bucket>
+              <bucket>&quot;Chhattisgarh&quot;</bucket>
+              <bucket>&quot;Himachal Pradesh&quot;</bucket>
+              <bucket>&quot;Tripura&quot;</bucket>
+              <bucket>&quot;Puducherry&quot;</bucket>
+              <bucket>&quot;Arunachal Pradesh&quot;</bucket>
+              <bucket>&quot;Meghalaya&quot;</bucket>
+              <bucket>&quot;Goa&quot;</bucket>
+              <bucket>&quot;Chandigarh&quot;</bucket>
+              <bucket>&quot;Manipur&quot;</bucket>
+              <bucket>&quot;Andaman and Nicobar Islands&quot;</bucket>
+              <bucket>&quot;Mizoram&quot;</bucket>
+              <bucket>&quot;Ladakh&quot;</bucket>
+              <bucket>&quot;Nagaland&quot;</bucket>
+              <bucket>&quot;Sikkim&quot;</bucket>
+              <bucket>&quot;Lakshadweep&quot;</bucket>
+              <bucket>&quot;Dadra and Nagar Haveli and Daman and Diu&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.01jlunz07tq2ej125r03i0deu8rb].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.01jlunz07tq2ej125r03i0deu8rb].[Multiple Values]' scope='cols' value='' />
+            <encoding attr='space' class='0' field='[federated.01jlunz07tq2ej125r03i0deu8rb].[Multiple Values]' field-type='quantitative' max='10239951308.032293' min='436873138.92331207' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='60' />
+            <format attr='cell-h' value='40' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#666666' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-family' value='Arial' />
+            <format attr='font-size' value='10' />
+            <format attr='color' value='#1b1b1b' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01jlunz07tq2ej125r03i0deu8rb].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01jlunz07tq2ej125r03i0deu8rb].[none:State:nk]</rows>
+        <cols>[federated.01jlunz07tq2ej125r03i0deu8rb].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{446B334E-37C9-45B9-B81E-1AAC8F2A962E}' />
+    </worksheet>
+    <worksheet name='Title'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ICMRTestingLabs' name='federated.04q647916krrsg1bhibj10bv7367' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04q647916krrsg1bhibj10bv7367'>
+            <column caption='Title' datatype='string' name='[Calculation_118500973433749521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Covid-19 in India Dashboard Analysis&quot;' />
+            </column>
+            <column-instance column='[Calculation_118500973433749521]' derivation='None' name='[none:Calculation_118500973433749521:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='1778' />
+            <format attr='height' value='82' />
+            <format attr='text-align' value='center' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='24' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='Arial' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.04q647916krrsg1bhibj10bv7367].[none:Calculation_118500973433749521:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{85A884F9-50B8-4CB2-B8FD-304C0B368F28}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Covid-19 Dashboard'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f0eae8' />
+        </style-rule>
+      </style>
+      <size maxheight='1100' maxwidth='1800' minheight='1100' minwidth='1800' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='covid_19_india' name='federated.181gqwt08czzz8168ky8r0b2f50b' />
+      </datasources>
+      <datasource-dependencies datasource='federated.181gqwt08czzz8168ky8r0b2f50b'>
+        <column datatype='string' name='[State/UnionTerritory]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column-instance column='[State/UnionTerritory]' derivation='None' name='[none:State/UnionTerritory:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='86818' id='7' param='horz' type-v2='layout-flow' w='99112' x='444' y='12455'>
+            <zone h='86818' id='5' type-v2='layout-basic' w='99112' x='444' y='12455'>
+              <zone h='43411' id='3' name='Map:Total deaths by state' w='24776' x='444' y='12455'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43411' id='9' name='Covid cases by state' w='24779' x='74777' y='12455'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43411' id='12' name='Age Group Details' w='24778' x='25220' y='12455'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43411' id='13' name='Gender  without missing value' w='24779' x='49998' y='12455'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43407' id='14' name='ICMR Testing Labs in each state' w='24777' x='444' y='55866'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43407' id='15' name='Statewise Testing Details' w='48834' x='50722' y='55866'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43407' id='17' name='First vs Second dose adminstrated.' w='25501' x='25221' y='55866'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='11728' id='16' name='Title' show-title='false' w='99112' x='444' y='727'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='9091' id='8' name='Map:Total deaths by state' pane-specification-id='0' param='[federated.181gqwt08czzz8168ky8r0b2f50b].[sum:Deaths:qk]' type-v2='color' w='8778' x='13111' y='47818' />
+        <zone h='6182' id='10' mode='dropdown' name='Covid cases by state' param='[federated.181gqwt08czzz8168ky8r0b2f50b].[none:State/UnionTerritory:nk]' type-v2='filter' w='9333' x='80389' y='22727' />
+        <zone fixed-size='210' h='11182' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='6167' x='80444' y='31091'>
+          <zone h='7000' id='11' name='Covid cases by state' pane-specification-id='7' param='[federated.181gqwt08czzz8168ky8r0b2f50b].[:Measure Names]' show-title='false' type-v2='color' w='6167' x='80444' y='31091'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2400' minheight='2400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98546' id='24' param='vert' type-v2='layout-flow' w='99112' x='444' y='727'>
+                <zone fixed-size='139' h='13364' id='16' is-fixed='true' name='Title' show-title='false' w='99112' x='444' y='727'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42593' id='3' is-fixed='true' name='Map:Total deaths by state' w='24776' x='444' y='14091'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9091' id='8' name='Map:Total deaths by state' pane-specification-id='0' param='[federated.181gqwt08czzz8168ky8r0b2f50b].[sum:Deaths:qk]' type-v2='color' w='8778' x='13111' y='47818'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42593' id='12' is-fixed='true' name='Age Group Details' w='24778' x='25220' y='14091'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42593' id='13' is-fixed='true' name='Gender  without missing value' w='24779' x='49998' y='14091'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6182' id='10' mode='dropdown' name='Covid cases by state' param='[federated.181gqwt08czzz8168ky8r0b2f50b].[none:State/UnionTerritory:nk]' type-v2='filter' w='9333' x='80389' y='22727'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42593' id='9' is-fixed='true' name='Covid cases by state' w='24779' x='74777' y='14091'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7000' id='11' name='Covid cases by state' pane-specification-id='7' param='[federated.181gqwt08czzz8168ky8r0b2f50b].[:Measure Names]' show-title='false' type-v2='color' w='6167' x='80444' y='31091'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42589' id='14' is-fixed='true' name='ICMR Testing Labs in each state' w='24777' x='444' y='56684'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42589' id='17' is-fixed='true' name='First vs Second dose adminstrated.' w='25501' x='25221' y='56684'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42589' id='15' is-fixed='true' name='Statewise Testing Details' w='48834' x='50722' y='56684'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{6FB0C12B-FF1F-4553-93AC-78D693DDD0CC}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='260'>
+    <window class='worksheet' name='Map:Total deaths by state'>
+      <cards>
+        <edge name='left'>
+          <strip size='140'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.181gqwt08czzz8168ky8r0b2f50b].[sum:Deaths:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2004EE2B-A51F-49FE-A19D-C26DB15F4531}' />
+    </window>
+    <window class='worksheet' name='Covid cases by state'>
+      <cards>
+        <edge name='left'>
+          <strip size='142'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.181gqwt08czzz8168ky8r0b2f50b].[none:State/UnionTerritory:nk]' type='filter' />
+            <card pane-specification-id='7' param='[federated.181gqwt08czzz8168ky8r0b2f50b].[:Measure Names]' show-title='false' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9C567CAA-53BA-4899-9307-B56B68B36923}' />
+    </window>
+    <window class='worksheet' name='First vs Second dose adminstrated.'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{0E751087-F0C4-4647-805D-66114F0749A7}' />
+    </window>
+    <window class='worksheet' name='Doses admministrated by vaccine'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C7B0F83B-A6DA-4753-BE04-9B2B88D8E61F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Age Group Details'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6EAD6460-B126-4151-825E-842A6CE8F680}' />
+    </window>
+    <window class='worksheet' name='Gender  without missing value'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{FC7D38F9-B27F-4E15-B952-142945192944}' />
+    </window>
+    <window class='worksheet' name='ICMR Testing Labs in each state'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A73CF51A-7BB5-4773-B10C-DA7931847D00}' />
+    </window>
+    <window class='worksheet' name='Title'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1994EDFD-9BD3-4EEF-B4A1-EDAABCF01F9C}' />
+    </window>
+    <window class='worksheet' name='Statewise Testing Details'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DFB3F8B7-96A4-4797-AAFE-907750290361}' />
+    </window>
+    <window class='dashboard' name='Covid-19 Dashboard'>
+      <viewpoints>
+        <viewpoint name='Age Group Details'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Covid cases by state'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='First vs Second dose adminstrated.'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Gender  without missing value'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='ICMR Testing Labs in each state' />
+        <viewpoint name='Map:Total deaths by state'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Statewise Testing Details' />
+        <viewpoint name='Title' />
+      </viewpoints>
+      <active id='17' />
+      <simple-id uuid='{EE4733DC-9953-42E9-A00D-0FA8089D0BE6}' />
+    </window>
+  </windows>
+</workbook>
